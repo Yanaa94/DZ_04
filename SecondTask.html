@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Task</title>
+
+    <!-- Запрет растяжки поля для ввода комментария textarea-->
+    <style>
+        textarea {
+         width: 30%; /* Ширина поля в процентах */
+         height: 80px; /* Высота поля в пикселах */
+         resize: none; /* Запрещаем изменять размер */
+        } 
+       </style>
+
+</head>
+<body>
+    
+<h1>Форма для регистрации на музыкальный фестиваль</h1>
+<p>Здесь Вы сможете оставить свои личные данные, чтобы получить желаемый билет</p>
+<p>Наши операторы свяжутся с Вами в ближайшее время, как только получат запрос</p>
+<br>
+<form>
+    <fieldset>
+        <legend>Форма для регистрации</legend>
+            <h2>User info</h2>
+            <label>Введите логин &nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></label><br><br>
+        <!-- &nbsp;&nbsp;&nbsp;&nbsp; это отступ, размеров в табуляцию
+        Один пробел &nbsp;
+        Два пробела — введите &ensp;
+        Четыре пробела — введите &emsp;-->
+
+        <label>Введите пароль &nbsp;&nbsp;&nbsp;&nbsp;<input type="password"></label><br><br>
+        <label>Введите Фамилию и Имя &nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></label><br><br>
+
+        <h4>Семейное положение</h4>
+    <label><input type="radio" name="status">Холост</label>
+    <label><input type="radio" name="status">Женат</label>
+    <label><input type="radio" name="status">Разведен</label>
+    <label><input type="radio" name="status">Вдовец</label>
+    <br>
+    <br>
+    <label>Дата рождения &nbsp;&nbsp;&nbsp;&nbsp;<input type="date"></label><br><br>
+    <label>Ваш Email &nbsp;&nbsp;&nbsp;&nbsp;<input type="email"></label><br><br>
+
+    <h4>Ваша страна</h4>
+    <select>
+        <option>Украина</option>
+        <option>Великобритания</option>
+        <option>Польша</option>
+        <option>Испания</option>
+    </select>
+
+    <label>Введите Ваш Город &nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></label><br><br>
+
+    <textarea maxlength="800">О себе очень большой параграф с большим комментарием</textarea><br><br>
+
+    <h4>Родной язык</h4>
+        <select>
+        <option>Украинский</option>
+        <option>Английский</option>
+        <option>Польский</option>
+        <option>Испанский</option>
+    </select><br><br>
+
+    <label>Я разрешаю передать мои личные данные &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" checked></label><br><br>
+
+    <label><input type="checkbox" checked>&nbsp;&nbsp;&nbsp;&nbsp; Я разрешаю передать мои личные данные</label><br><br>
+
+
+    <br>
+    
+    <div><input type="submit"></div>
+    </fieldset>
+</form>
+
+
+
+</body>
+</html>
